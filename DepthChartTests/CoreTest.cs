@@ -83,7 +83,7 @@ namespace DepthChartTests
 
             PlayerPosition playePosForBlaine = playerList.Find(x => x.player.Number == BlaineGabbert.Number && x.PositionName == PlayerPositionName.QuaterBack.GetStringValue());
 
-            Assert.AreEqual(3, playerList.Count); // Verifying player Count after removall
+            Assert.AreEqual(3, playerList.Count); // Verifying player Count after addition of new player
             Assert.AreEqual(2, playePosForBlaine.PositionRanking); // Verifying player position
         }
 
